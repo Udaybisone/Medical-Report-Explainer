@@ -19,10 +19,11 @@ def setup_rag():
 
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
 
+    # Configure Chroma to run locally WITHOUT persistence to disk
     settings = Settings(
         chroma_api_impl="local",
-        persist_directory=None,  # Important: disables persistent disk storage
         anonymized_telemetry=False,
+        # persist_directory omitted to avoid validation error and disk persistence
     )
 
     vectordb = Chroma.from_documents(
