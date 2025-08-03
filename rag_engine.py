@@ -4,6 +4,7 @@ from langchain_community.vectorstores import Chroma
 from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 from langchain.chains import RetrievalQA
 from langchain.text_splitter import CharacterTextSplitter
+from chromadb.config import Settings
 
 def setup_rag():
     docs = []
@@ -17,7 +18,18 @@ def setup_rag():
     chunks = splitter.split_documents(docs)
 
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
-    vectordb = Chroma.from_documents(chunks, embedding=embeddings)
+
+    settings = Settings(
+        chroma_api_impl="local",
+        persist_directory=None,  # Important: disables persistent disk storage
+        anonymized_telemetry=False,
+    )
+
+    vectordb = Chroma.from_documents(
+        chunks,
+        embedding=embeddings,
+        client_settings=settings
+    )
     retriever = vectordb.as_retriever()
 
     llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.3)
