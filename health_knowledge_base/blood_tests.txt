@@ -1,0 +1,8 @@
+Hemoglobin:
+Hemoglobin is a protein in red blood cells that carries oxygen. Low levels may suggest anemia.
+
+WBC Count:
+White Blood Cell count measures your immune response. High WBC may indicate infection.
+
+Platelet Count:
+Platelets help blood clot. Low levels may lead to bleeding issues.

@@ -1,0 +1,35 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+
+# Environment variables
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# VSCode settings (optional)
+.vscode/
+
+# PDF and temporary reports
+*.pdf
+temp_report.*
+
+# Python dependency files (lock files, optional)
+poetry.lock
+Pipfile.lock
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Ignore Chroma database if persisted locally
+chroma_db/
+
+# Jupyter Notebooks checkpoints (if any)
+.ipynb_checkpoints/

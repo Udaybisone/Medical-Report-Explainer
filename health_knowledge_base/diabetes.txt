@@ -1,0 +1,5 @@
+Fasting Blood Sugar (FBS):
+This test measures blood sugar after an overnight fast. Normal range: 70–100 mg/dL. High levels suggest prediabetes or diabetes.
+
+Postprandial Blood Sugar (PPBS):
+Measures blood sugar 2 hours after a meal. Normal: <140 mg/dL. High values can indicate poor glucose control.

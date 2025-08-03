@@ -1,0 +1,8 @@
+Total Cholesterol:
+Measures overall cholesterol. Desirable: <200 mg/dL. Higher levels raise heart disease risk.
+
+HDL:
+"Good" cholesterol. Higher is better (>40 mg/dL for men, >50 mg/dL for women).
+
+LDL:
+"Bad" cholesterol. Lower is better (<100 mg/dL ideal).
